@@ -1,8 +1,6 @@
 package Codechef_sept_long;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class shufflin {
 
@@ -19,16 +17,36 @@ public class shufflin {
 				int input = ob.nextInt();
 				list.add(input);
 			}
-			int sum = 0, c = 1;
-			for(int i : list) {
-				{
-					sum += ((i + c++) % 2);
-				}
+			for(int i = 1; i < list.size(); i += 2) {
+				list = shuffle(list, i);
 			}
-			System.out.println(sum);
+			System.out.println(list);
+		
+		System.out.println(mod(list));
+		}
+	}
+	//shuffle two indexes with each other.
+	public static List<Integer> shuffle(List<Integer> list, int  x){
+		
+		if(list.size() > (x +1))	{
+			int temp = list.get(x);
+			list.set(x, list.get(x + 1));
+			list.set(x + 1, temp);
+			
+			return list;
+		}
+		else {
+			return list;
 		}
 		
-
+	}
+	public static int mod(List<Integer> list) {
+		int sum = 0, count = 1;
+		for(int i : list) {
+			int x = i + count++;
+			sum += x % 2;
+		}
+		return sum;
 	}
 
 }
