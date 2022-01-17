@@ -1,4 +1,4 @@
-package p2_30_DoF_Code_2022;
+package Thirty_days_of_Code_2022;
 
 import java.util.Scanner;
 
