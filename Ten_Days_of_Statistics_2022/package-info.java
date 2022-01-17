@@ -5,4 +5,4 @@
  * @author rishabh-147
  *
  */
-package p1_10_DoF_STATS_2022;
+package Ten_Days_of_Statistics_2022;
