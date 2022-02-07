@@ -3,6 +3,7 @@ package Thirty_days_of_Code_2022;
 import java.util.Scanner;
 
 public class day_26 {
+//For those interested: If a number is divisable by another number less or equal to the square root of the first number... it is NOT prime. That is the reason for O(sqrt(n)) run time.
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
