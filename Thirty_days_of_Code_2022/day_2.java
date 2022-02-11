@@ -3,7 +3,26 @@ package Thirty_days_of_Code_2022;
 import java.util.Scanner;
 
 public class day_2 {
+	
+	  public static void main(String[] args) {
+	        int i = 4;
+	        double d = 4.0;
+	        String s = "HackerRank ";
+			
+	        Scanner scan = new Scanner(System.in);
 
+	        // Declare second integer, double, and String variables. 
+	    int a = scan.nextInt() + i;
+	    double b = scan.nextDouble() + d;
+	    scan.nextLine();
+	    String c = s + scan.nextLine();
+	       
+	System.out.println(a + "\n"+b + "\n"+c);
+	       
+	        scan.close();
+}
+}
+/*
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner ob = new Scanner(System.in);
@@ -26,3 +45,17 @@ public class day_2 {
 	}
 
 }
+*/
+
+/*
+ * 
+ import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+	
+  
+ */
